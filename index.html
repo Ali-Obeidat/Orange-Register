@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title> Register</title>
+      <link href="css/orangeIcons.min.css" rel="stylesheet">
+      <link href="css/boosted.min.css" rel="stylesheet"/>
+      <style>
+        strong,.Agree{
+          color: red;
+        }
+      </style>
+      </head>
+   <body>
+      <body>
+         <div class="d-md-flex flex-md-equal h-100 ">
+            <div class="col-lg-4 p-0 auth-slider my-div" >
+               <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  </ol>
+                  <div class="carousel-inner">
+                     <div class="carousel-item active">
+                        <img class="d-block h-100 my-div" src="img/1.jpg" alt="First slide">
+                     </div>
+                     <div class="carousel-item">
+                        <img id=""class="d-block h-100 my-div" src="img/2.jpg" alt="Second slide">
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-8 px-0">
+               <header role="banner">
+                <nav role="navigation" id="mainNav" class="navbar navbar-light bg-white navbar-expand-md pt-2 border-bottom pb-0 mb-2 pt-1" aria-label="Main navigation">
+                  <div class="container-fluid">
+                      <a href="/">
+                          <img id="imgw" src="https://orangecodingacademy.com/assets/boosted/dist/img/white.png" class="d-inline-block align-bottom mr-3" alt="Back to homepage" title="Back to homepage" height="70" loading="lazy">
+                      </a>
+                      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#orange-navbar-collapse" aria-controls="orange-navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="navbar-collapse justify-content-end collapse" id="orange-navbar-collapse">
+                      <ul class="navbar-nav">
+                          <li class="nav-item"><a class="nav-link" href="/help" target="_blank">Help </a></li>
+                          <li class="nav-item"><a class="nav-link" href="/terms" target="_blank"> Terms &amp; Conditions</a></li>
+                      </ul>
+                      <ul class="navbar-nav">
+                          
+                                          </ul>
+              </div>
+          </div>
+      </nav>
+               </header>
+               <section class="wizard-section mt-4">
+                  <div class="form-wizard">
+                     <form name="form" onsubmit="required()" action="#" class="signup-step1" action="#">
+                        <input type="hidden" name="" value="">               
+                        <div class="d-flex align-items-center flex-column">
+                           <div class="form-group col-lg-6 col-md-7">
+                              <h1>Create an account</h1>
+                           </div>
+                           <div class="mb-4 form-group col-lg-6 col-md-7 ">
+                              <label for="email" class="is-required">Email address<span class="sr-only"> (required)</span> <strong id="emailREQ" class="color-danger"></strong></label>
+                              <div class="input-group ">
+                                 <input name="email" type="text"
+                                    class="form-control email  " id="email"
+                                    value="">
+                              </div>
+                              <small >eg: username@domain.com <br></small>
+
+                           </div>
+                           <div class="mb-4 form-group col-lg-6 col-md-7 ">
+                              <label for="mobile" class="is-required">Mobile<span class="sr-only"> (required)</span> <strong id="mobileREQ" class="color-danger"></strong></label>
+                              <div class="input-group ">
+                                 <input name="mobile" type="text"
+                                    class="form-control mobile  " id="mobile"
+                                    value="">
+                              </div>
+                              <small>eg: 077******** <br></small>
+                           </div>
+                           <div class="mb-1 form-group col-lg-6 col-md-7" style="position: relative;">
+                              <label for="validationServer02" class="is-required">Create Password<span
+                                 class="sr-only"> (required)</span> <strong id="passwordREQ" class=" color-danger" ></strong></label>
+                              <div class="input-group ">
+                                 <input name="password" type="password"
+                                    class="form-control password col-12 pr-0  "
+                                    id="password"
+                                    value="">
+                              </div>
+                              <small>The Password should be between 6-18 characters. </small>
+                              <div class="invalid-feedback password-validation-message font-size-7 mb-3">
+                                 the password should be at least (8 characters,1 uppercase, 1 number & 1 special character).
+                              </div>
+                           </div>
+                           <div class="form-group col-lg-6 col-md-7 mt-4">
+                              <div class="custom-control custom-checkbox">
+                                 <input class="custom-control-input " id="chAgree"
+                                    name="chAgree" type="checkbox" >
+                                 <label class="custom-control-label " for="chAgree">I agree to the <a href="#" target="_blank">terms &amp;
+                                 conditions</a> Orange. <span class="mandatory-txt">*</span></label>
+                                 <div class="Agree"></div>
+                              </div>
+                           </div>
+                           <div class="mb-4 form-group col-lg-6 col-md-7 ">
+                              <div class="form-group custom-control custom-checkbox col-sm-12 ">
+                                 <input name="is_newsletter" type="checkbox" class="custom-control-input"
+                                    id="is_newsletter"
+                                    checked
+                                    >
+                                 <label class="custom-control-label" for="is_newsletter">Receive Coding Academy
+                                 Newsletter. </label>
+                              </div>
+                           </div>
+                           <div class="mb-4 form-group col-lg-6 col-md-7">
+                              <button class="next1 btn btn-primary  btn-lg btn-block" type="submit">Sign Up</button>
+                           </div>
+                           <div class="mb-4 form-group col-lg-6 col-md-7">
+                              <a href="#" style="text-decoration: none"> <input type="button"                                                                                             class="btn btn-secondary  btn-lg btn-block" value="Already have an account?login"/>
+                           </div>
+                        </div>
+                     </form>
+                  </div>
+               </section>
+            </div>
+         </div>
+         <script src="main.js">
+function required()
+{
+var empt = document.forms["form"]["email"].value;
+if (empt == "")
+{
+alert("Please input a Value");
+return false;
+}
+else 
+{
+alert('Code has accepted : you can try another');
+return true; 
+}
+}
+
+         </script>
+   </body>
+</html>
